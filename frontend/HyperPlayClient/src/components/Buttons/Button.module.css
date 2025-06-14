@@ -1,0 +1,114 @@
+/* CSS del componente Button */
+
+/* Generico */
+.button {
+  font-family: 'UniversCnBold', sans-serif;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Variantes */
+.large {
+  padding: 15px 30px;
+  font-size: 1.2em;
+}
+
+.medium {
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.small {
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+
+/* Colores */
+.morado {
+  background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.morado:hover {
+  background: linear-gradient(45deg, #5a0db3 0%, #1a65e6 100%);
+}
+
+.azul {
+  background: linear-gradient(45deg, #2193b0 0%, #6dd5ed 100%);
+}
+
+.azul:hover {
+  background: linear-gradient(45deg, #1a7a94 0%, #5dc4dc 100%);
+}
+
+.gradient-green {
+  background: linear-gradient(45deg, #11998e 0%, #38ef7d 100%);
+}
+
+.gradient-green:hover {
+  background: linear-gradient(45deg, #0d7a70 0%, #2ed66d 100%);
+}
+
+/* Estados */
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Logo de GitHub */
+.logoGit {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logoGit img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Variantes de tamaños */
+
+button.short {
+  width: 10rem; 
+  height: 3rem;
+  font-size: 1.2rem; 
+}
+
+button.large {
+  width: 16rem; 
+  height: 4rem;   
+  font-size: 1.3rem;
+}
+
+@media (max-width: 45rem) {
+  button.large {
+    width: 11rem; 
+    height: 4rem;   
+  }
+}
+
+/* Variantes de Colores */
+
+button.morado-azul {
+  background: var(--gradient-purple-blue);
+  box-shadow: var(--shadow-gradient-blue-purple);
+}
+
+button.azul-morado {
+  background: var(--gradient-blue-purple);
+  box-shadow: var(--shadow-gradient-blue-purple);
+}
+
+button.red {
+  background: var(--principal-red);
+  box-shadow: var(--principal-red);
+}
+
+button.morado-azul:active,
+button.azul-morado:active {
+  box-shadow: var(--shadow-gradient-blue-purple);
+}
+

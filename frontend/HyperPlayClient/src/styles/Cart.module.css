@@ -1,0 +1,53 @@
+.emptyCartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  gap: 20px;
+}
+
+.emptyCartGif {
+  max-width: 300px;
+  height: auto;
+}
+
+.containerCartList {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 60px;
+}
+
+.cartListGames {
+  gap: 20px;
+}
+
+.cartPayment {
+  align-self: start;
+  justify-self: right;
+  position: fixed;
+}
+
+@media (max-width:830px) {
+  .containerCartList {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px;
+  }
+
+  .cartPayment {
+    align-self: start;
+    position: relative;
+  }
+}
+
+@media (max-width:400px) {
+  .containerCartList {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px;
+  }
+}

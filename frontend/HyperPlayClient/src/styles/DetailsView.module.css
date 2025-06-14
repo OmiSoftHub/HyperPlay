@@ -1,0 +1,73 @@
+.details-view__info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  padding-bottom: 40px;
+  gap: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.2rem;
+  color: rgb(230, 230, 230);
+  margin-right: 20px;
+}
+
+.details-view__game-data {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.details-view__game-price {
+  grid-column: 2;
+  grid-row: 1;
+  padding-top: 66px;
+}
+
+.details-view__game-requirements {
+  grid-column: 2;
+  grid-row: 2;
+  padding-left: 30px;
+  justify-self: baseline;
+}
+
+.details-view__review-entry {
+  grid-column: 2;
+  grid-row: 3;
+  padding-right: 44px;
+  font-size: 1.5rem;
+}
+
+.details-view__reviews {
+  grid-column: 1;
+  grid-row: 3;
+  font-size: 1.5rem;
+}
+
+@media (max-width:1110px) {
+  .details-view__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .details-view__game-data {
+    grid-area: data;
+  }
+
+  .details-view__game-price {
+    grid-area: price;
+  }
+
+  .details-view__game-requirements {
+    padding-left: 0;
+    grid-area: requirements;
+  }
+
+  .details-view__review-entry {
+    grid-area: review-entry;
+  }
+
+  .details-view__reviews {
+    grid-area: reviews;
+  }
+}

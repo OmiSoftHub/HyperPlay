@@ -1,0 +1,63 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 16px;
+  font-size: 1.6rem;
+}
+
+.content{
+  display: flex;
+  width: 90%;
+  gap: 16px;
+}
+
+.imageContainer {
+  max-width: 300px; 
+  width: 100%;
+}
+
+.imageContainer img{
+  width: 100%;
+  height: auto;
+}
+
+.textContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.text{
+  display: flex;
+  gap: 10px;
+  font-size: 1.25em;
+}
+
+.iconoShip{
+  width: 24px;
+  height: 24px;
+}
+
+.title{
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: var(--principal-purple);
+}
+
+.text p{
+  margin: 4px 0 0;
+  color: white;
+}
+
+@media  (max-width: 720px){
+  .content{
+    flex-direction: column;
+  }
+  .imageContainer img{
+    width: 86vw;
+  }
+}

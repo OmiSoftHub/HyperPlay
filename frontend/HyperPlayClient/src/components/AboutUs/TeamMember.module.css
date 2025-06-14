@@ -1,0 +1,38 @@
+.cardMember {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 14px;
+  text-align: center;
+  color: white;
+  width: 22rem;
+  height: 270px;
+  border: 1px solid transparent;
+  border-image: var(--gradient-purple-blue) 1;
+  gap: 10px;
+}
+
+.cardImage {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 10px; 
+}
+
+.cardText {
+  font-family: var(--font-univers);
+  font-size: 1.25em;
+}
+
+@media (max-width: 1280px){
+  .cardMember{
+      width: 16rem;
+      height: 22rem;
+  }
+
+  .cardImage{
+    width: 8rem;
+    height: 8rem;
+  }
+}

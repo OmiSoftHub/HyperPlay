@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.catalogo {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: fit-content;
+  gap: clamp(8px, 2vw, 32px);
+  
+}
+
+@media (max-width: 1280px) {
+  .container {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+  }
+
+  .catalogo {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.gamesList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.gameCard {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.gameCard__left {
+  width: fit-content;
+}
+
+.gameCard__img {
+  max-width: 200px;
+  max-height: 233px;
+  min-width: 200px;
+  min-height: 233px;
+}
+
+.gameCard__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.gameCard__line {
+  border: none;
+  width: 400px;
+  height: 4px;
+  background: var(--gradient-purple-blue);
+
+}
+
+@media (max-width: 780px){
+  .gamesList{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gameCard__line{
+    width: 100%;
+  }
+
+  .gameCard__right{
+    width: 100%;
+  }
+}

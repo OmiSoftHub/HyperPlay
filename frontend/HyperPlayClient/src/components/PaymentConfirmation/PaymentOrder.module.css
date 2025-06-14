@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid;
+  border-image: var(--gradient-purple-blue) 1;
+  width: 80vw;
+  padding: 30px;
+  font-size: 1.5rem;
+}
+
+.gameItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: fit-content;
+  width: 280px;
+}
+
+.gameList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+  justify-items: start;
+}
+
+.listImg {
+  max-width: 200px;
+  max-height: 233px;
+  min-width: 200px;
+  min-height: 233px;
+}
+
+.line {
+  border: none;
+  height: 4px;
+  width: 250px;
+  background: var(--gradient-blue-purple);
+  margin: 10px 0;
+}
+
+.gameListData {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 54%;
+}

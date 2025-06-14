@@ -1,0 +1,25 @@
+
+
+.checkout__components {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr ;
+  gap: 40px;
+  padding: 60px;
+  min-height: 75vh;
+  font-size: 1.6rem;
+} 
+
+
+.checkout__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (max-width: 780px){
+  .checkout__components{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+  }
+}

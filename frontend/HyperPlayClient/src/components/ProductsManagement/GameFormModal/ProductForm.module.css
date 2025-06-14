@@ -1,0 +1,98 @@
+.productForm {
+    height: fit-content;
+    min-width: 45vw;
+    margin: 5vh 5vw 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: rgb(24, 24, 24);
+    font-size: 1.8rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.horizontalFormGroup {
+    width: 30vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: baseline;
+    align-items: end;
+    gap: 10px;
+}
+
+.productForm input,
+.productForm textarea,
+.productForm select {
+    width: 80%;
+    background-color: #1c1e3a;
+    color: #e4e4e4;
+    border: 1px solid var(--principal-blue, #6a00f4);
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+
+.productForm input[type="date"] {
+    width: fit-content;
+}
+
+.productForm textarea {
+    resize: vertical;
+    overflow: visible;
+
+}
+
+.productForm input {
+    height: 1rem;
+}
+
+.productForm textarea {
+    height: 5rem;
+}
+
+.productForm input::placeholder,
+.productForm textarea::placeholder {
+    color: #a3a3a3;
+}
+
+.date {
+    min-width: fit-content;
+}
+
+.priceStock{
+display: flex;
+gap: 4rem;
+}
+.productForm .numInput {
+    width: 12rem;
+   
+}
+
+.updateMsgSuccess {
+    color: var(--principal-green);
+}
+
+.updateMsgError {
+    color: var(--principal-red);
+}
+
+@media (max-width:795px) {
+
+
+    .productForm input,
+    .productForm textarea,
+    .productForm select {
+        width: 80vw;
+    }
+
+    .priceStock{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}

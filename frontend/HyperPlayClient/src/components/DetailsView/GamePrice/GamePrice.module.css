@@ -1,0 +1,145 @@
+.price-card {
+  display: flex;
+  width: 36rem;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+
+.price-card__left-plane {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  position: relative;
+}
+
+.price-card__plane-icon {
+  width: auto;
+  height: 100%;
+}
+
+.price-card__left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.price-card__product-code {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1em;
+  font-family: 'UniversLight';
+  color: white;
+}
+
+.price-card__product-id {
+  font-size: 0.9em;
+  color: white;
+}
+
+.price-card__price {
+  font-size: 1.25em;
+  font-weight: lighter;
+}
+
+.price-card__price-eur {
+  font-size: 2em;
+}
+
+.price-card__label {
+  font-size: 1.25em;
+}
+
+.price-card__rating {
+  font-size: 1em;
+}
+
+.price-card__planes-container {
+  display: flex;
+  gap: 6px;
+}
+
+.price-card__planes-container svg {
+  width: 32px;
+  height: 32px;
+}
+
+.price-card__no-reviews {
+  color: #a0a0a0;
+}
+
+.price-card__right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.price-card__stock-status {
+  font-size: 1em;
+  text-align: center;
+}
+
+.price-card__stock-status--in-stock {
+  color: var(--principal-green);
+}
+
+.price-card__stock-status--out-of-stock {
+  color: var(--principal-red);
+}
+
+.price-card__cart-icon img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.price-card__quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price-card__quantity-controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body-color);
+  color: white;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  font-size: 1.25em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+@media (max-width: 780px) {
+
+  .price-card {
+    position: relative;
+    width: 30rem;
+  }
+
+  .price-card__left-plane {
+    display: flex;
+    width: 1rem;
+    height: 32rem;
+    position: absolute;
+    top: -200px;
+    right: 17rem;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  .price-card__plane-icon {
+    width: auto;
+    height: 100%;
+  }
+}

@@ -1,0 +1,104 @@
+.card {
+    width: 40rem;
+    height: 14rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr) repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-footer-color);
+    padding: 10px;
+    gap: 15px;
+    border: 1px ridge var(--principal-blue);
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px var(--led-purple);
+}
+
+.imgContainer {
+    height: 14rem;
+}
+
+.gameImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.titleContainer,
+.priceContainer,
+.stockContainer {
+    background-color: var(--body-color);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--principal-blue);
+    padding: 6px;
+    text-align: center;
+    gap: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.container:hover {
+    background-color: var(--principal-light-blue);
+}
+
+.containerTitle {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--principal-blue);
+
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+    word-wrap: break-word;
+    white-space: normal;
+    margin: 0;
+}
+
+.price,
+.stock {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+.editProduct {
+    position: absolute;
+    bottom: 2px;
+    right: 0px;
+    margin: 5px;
+}
+
+.price {
+    color: var(--success-color);
+}
+
+.stock {
+    color: var(--warning-color);
+}
+
+@media (max-width: 45rem) {
+
+    .card {
+        width: 30rem;
+    }
+
+    .editProduct {
+        position: absolute;
+        bottom: 2px;
+        right: 0px;
+        margin: 5px;
+    }
+}

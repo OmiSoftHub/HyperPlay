@@ -1,0 +1,19 @@
+.errorBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.errorText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-size: 1.25em;
+}
+
+.gif {
+    height: 300px;
+    width: auto;
+}

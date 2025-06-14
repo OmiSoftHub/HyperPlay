@@ -1,0 +1,6 @@
+@HyperPlayServer_HostAddress = http://localhost:5018
+
+GET {{HyperPlayServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,46 @@
+.cartPayment {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 300px;
+}
+
+.cartPayment__containerTitle {
+  display: flex;
+  gap: 2px;
+}
+
+.cartPayment__palito {
+  color: var(--principal-purple);
+  font-size: 2.2em;
+}
+
+.cartPayment__title {
+  font-size: 2.4rem;
+}
+
+.cartPayment__total {
+  font-size: 1.6rem;
+  font-family: 'UniversLight';
+}
+
+.cartPayment__price {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2.2em;
+}
+
+.cartPayment__line {
+  border: none;
+  height: 4px;
+  background: var(--gradient-blue-purple);
+  margin: 10px 0;
+}
+
+.cartPayment__containerButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}

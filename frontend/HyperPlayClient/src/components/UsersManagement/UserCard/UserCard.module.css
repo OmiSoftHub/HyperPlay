@@ -1,0 +1,112 @@
+.card {
+    min-width: fit-content;
+    min-height: fit-content;
+    display: grid;
+    grid-template-areas:
+        "img user role buttons"
+        "img email email buttons"
+    ;
+    grid-template-columns: 1fr 1fr 1fr 0.3fr;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-footer-color);
+    padding: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+    border: 1px ridge var(--principal-blue);
+    border-radius: 4px;
+    transition: box-shadow 0.15s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px var(--led-purple);
+}
+
+.userImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    grid-area: img;
+}
+
+.container {
+    background-color: var(--body-color);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--principal-blue);
+    padding: 6px;
+    text-align: center;
+    gap: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.container:hover {
+    background-color: var(--principal-light-blue);
+}
+
+.containerTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--principal-blue);
+}
+
+.userContainer {
+    grid-area: user;
+}
+
+.emailContainer {
+    grid-area: email;
+}
+
+.roleContainer {
+    grid-area: role;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+    justify-content: space-between;
+    gap: 5px;
+    grid-area: buttons;
+}
+
+.editUser,
+.deleteUser {
+    padding: 6px 6px;
+    background-color: var(--header-footer-color);
+    color: white;
+    cursor: pointer;
+}
+
+.user,
+.email,
+.role {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 425px) {
+    .card {
+        grid-template-areas:
+            "img user role"
+            "img email email"
+            "buttons buttons buttons "
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .buttonContainer {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        width: 100%;
+        justify-content: space-between;
+        grid-area: buttons;
+    }
+
+}

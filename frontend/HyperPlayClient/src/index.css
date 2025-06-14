@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles can be added below */
+@layer components {
+  .game-container {
+    @apply container mx-auto px-4;
+  }
+  
+  .game-button {
+    @apply px-4 py-2 rounded-game bg-game-primary-500 text-white hover:bg-game-primary-600 transition-game;
+  }
+  
+  .game-card {
+    @apply bg-game-ui-surface rounded-game p-4 shadow-game;
+  }
+  
+  .game-input {
+    @apply bg-game-ui-background border-game-ui-border rounded-game px-3 py-2 text-game-ui-text focus:ring-2 focus:ring-game-primary-500 focus:border-transparent;
+  }
+} 
